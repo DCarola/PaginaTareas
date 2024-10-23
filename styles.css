@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+main{
+  padding: 10px;
+}
+
+h3{
+  margin-top: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  flex-wrap: wrap;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form-section {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-section input[type="text"],
+.form-section textarea,
+.form-section input[type="date"],
+.form-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-section textarea {
+  resize: none; /* Evita el redimensionamiento */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2ecc71; /* Verde para el botón */
+  color: white;
+  cursor: pointer;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.task {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.high-priority {
+  border-left: 5px solid #e74c3c; /* Rojo */
+}
+
+.medium-priority {
+  border-left: 5px solid #f1c40f; /* Amarillo */
+}
+
+.low-priority {
+  border-left: 5px solid #2ecc71; /* Verde */
+}
+
+.task h4 {
+  margin-bottom: 10px;
+}
+
+.due-date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+footer nav a {
+  color: white;
+  margin-left: 10px;
+}
+
+@media screen and (max-width:280px) {
+  nav{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  } 
+}
